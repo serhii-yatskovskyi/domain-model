@@ -1,6 +1,6 @@
 # Domain Model
 
-A lightweight library that helps to organize a code according to the Domain Model architecture.
+A lightweight library that helps to organize code according to the Domain Model architecture.
 
 ## Publishing Domain and Integration Events
 
