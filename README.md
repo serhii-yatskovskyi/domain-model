@@ -227,3 +227,20 @@ How to avoid a developer forget to register saver? Use the registry inside the I
      void save(DomainEvent event) ...
  }
  ```-->
+
+<!-- 
+## Deploying to Maven Central
+
+1. Attach two plugins:
+   - maven-source-plugin
+   - maven-javadoc-plugin
+2. Execute
+   ```
+   mvn clean install -DcreateChecksum=true
+   ```
+3. In shell, go to .m2/repositories/../<installed-artifacts> and exec `gpg -ab <file-name>`
+for *.pom, *.jar, *-sources.jar, *-javadoc.jar
+4. make a dir hierarchy org/bayaweaver/2.0.0/domain-model and place all 4x3 files (sources, their sha1, md5, sca)
+5. zip 'org'
+6. Deploy to https://central.sonatype.com/publishing/deployments
+-->
