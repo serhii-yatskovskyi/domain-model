@@ -2,6 +2,16 @@
 
 A lightweight library for organizing a project in accordance with Domain Model architecture.
 
+## Adding as Dependency
+
+```
+<dependency>
+    <groupId>org.bayaweaver</groupId>
+    <artifactId>domain-model</artifactId>
+    <version>2.1.0</version>
+</dependency>
+```
+
 ## Publishing Domain and Integration Events
 
 1. Events should be processed in the exact order they are received. If the event E1 triggers another event E2 from
